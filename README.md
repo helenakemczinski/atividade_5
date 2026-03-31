@@ -26,7 +26,8 @@ Assim também facilitando conversõesn e reutilizações, e o navegador guarda e
 
 # Como declarar variáveis?
 Em JavaScript você declara variáveis ​​usando var, let ou const, sendo que hoje é mais recomendado usar principalmente let e const
-Use let quando o valor da variável pode mudar depois, e const quando o valor não deve ser reatribuído. O nome da variável deve começar com letra, sublinhado _ ou cifrão $, pode ter letras, números, _ ou $ depois, e não pode ser uma palavra reservada da linguagem, como var, let, if ou function.04_variaveis_tipos_escopo
+Use let quando o valor da variável pode mudar depois, e const quando o valor não deve ser reatribuído. O nome da variável deve começar com letra, sublinhado _ ou cifrão $, pode ter letras, números, _ ou $ depois, e não pode ser uma palavra reservada da linguagem, como var, let, if ou function
+exemplp04_variaveis_tipos_escopo
 
 # Diferença entre var, let e const
 Var: Declarar variáveis ​​com escopo de função, permitindo redeclaração e reatribuiçãoEla sofre hoisting(a declaração sobe para o topo do escopo, mas inicializada como undefined, o que pode causar problemas se usada antes da linha real) Exemplo: em um laço for, um var sai para fora do bloco, afetando código externo
