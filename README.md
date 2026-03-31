@@ -2,9 +2,8 @@
 JavaScript e uma linguagem de programacao que te permite colocar itens complexos em paginas web.
 Com isso a págian web pode tanto exibir: informaçãoes estáticas, dinâmicas, mapas ou gráficos em 2D/3D animados, e até conteúdos que atiualizam a cada determidado tempo. Qunado você ver qualquer website com essa características pode apostar que o JavaScript provavelmente está envolvido. 
 É a terceira camada do bolo das tecnologias padrões da web, sendo as outras o HTML e o CSS 
-
-# Variáveis
 [![App Platform](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/What_is_JavaScript/cake.png)](https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Scripting/What_is_JavaScript)
+# Variáveis
 
 
 Explica o que é variável.
@@ -14,6 +13,7 @@ Para exemplo de declaracao de variaveis, veja os arquivos na pasta 04_variaveis_
 
 # Como ele complementa HTML e CSS?
 O JavaScript complementa o HTML e o CSS como se ao todo fossem um corpo, o HTMl é o esqueleto que sustenta todod o sistema, já o CSS é a pele, cabelo e roupas, pois cria todo o visual do site como ele vai aparecer para o usuario, e por fim o JavaScripté o músculo, que dá movimnto, pois torna a página web mais dinâmica, permitindo criar funcões como animações, respostas a ações do usuário e atualização de conteúdos em tempo real
+[![App Platform](https://i.imgur.com/Eps32Cl_d.webp?maxwidth=760&fidelity=grand)](https://cursos.alura.com.br/forum/topico-dica-sobre-oq-continuar-estudando-218376)
 
 # Onde JavaScript pode ser usado no HTML?
  O JavaScript pode ser usado no HTML para deixar o site mais interativo e dinâmico como responder aos usuarios, alterar textos e elementos, validar formulários e executar ações automaticamente no site.
@@ -26,7 +26,7 @@ Assim também facilitando conversõesn e reutilizações, e o navegador guarda e
 
 # Como declarar variáveis?
 Em JavaScript você declara variáveis ​​usando var, let ou const, sendo que hoje é mais recomendado usar principalmente let e const
-Use let quando o valor da variável pode mudar depois, e const quando o valor não deve ser reatribuído. O nome da variável deve começar com letra, sublinhado _ ou cifrão $, pode ter letras, números, _ ou $ depois, e não pode ser uma palavra reservada da linguagem, como var, let, if ou function
+Use let quando o valor da variável pode mudar depois, e const quando o valor não deve ser reatribuído. O nome da variável deve começar com letra, sublinhado _ ou cifrão $, pode ter letras, números, _ ou $ depois, e não pode ser uma palavra reservada da linguagem, como var, let, if ou function.04_variaveis_tipos_escopo
 
 # Diferença entre var, let e const
 Var: Declarar variáveis ​​com escopo de função, permitindo redeclaração e reatribuiçãoEla sofre hoisting(a declaração sobe para o topo do escopo, mas inicializada como undefined, o que pode causar problemas se usada antes da linha real) Exemplo: em um laço for, um var sai para fora do bloco, afetando código externo
@@ -75,7 +75,8 @@ Exemplo: 10 + 5 resulta em 15
 
 Operações Lógicas
 Combine booleanos com && (E lógico), || (OU lógico) e ! (NÃO)
-Exemplo: true && false é false; !true é false.
+Exemplo: true && false é false
+         !true é false.
 
 Útil para condições: if (idade >= 18 && autorizado) { ... }
 
@@ -90,8 +91,9 @@ Múltiplas condições: if (condição1) { ... } else if (condição2) { ... } e
  # Como usar estruturas de repetição?
  As estruturas de repetição em JavaScript servem para fazer com que um bloco de códigos execute varias vezes até que as condições sejam feitas, as principais  são for, while e do...while
  For: é usando quando se sabe quantas vezes aproximadamente repetir o bloco
- exemplo: for(le i = 0; i < 5; i++){
+ exemplo: for(le i = 0; i < 5; i++) {
             console.log("Numero: " +i);
+            }
     -let i = 0: inicio do condutor
     -i < 5 : condição para continuar
     -i++: após cara interação
