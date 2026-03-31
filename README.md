@@ -2,12 +2,10 @@
 JavaScript e uma linguagem de programacao que te permite colocar itens complexos em paginas web.
 Com isso a págian web pode tanto exibir: informaçãoes estáticas, dinâmicas, mapas ou gráficos em 2D/3D animados, e até conteúdos que atiualizam a cada determidado tempo. Qunado você ver qualquer website com essa características pode apostar que o JavaScript provavelmente está envolvido. 
 É a terceira camada do bolo das tecnologias padrões da web, sendo as outras o HTML e o CSS 
+
+
 [![App Platform](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/What_is_JavaScript/cake.png)](https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Scripting/What_is_JavaScript)
-# Variáveis
 
-
-Explica o que é variável.
-Para exemplo de declaracao de variaveis, veja os arquivos na pasta 04_variaveis_tipos_escopo.
 # Para que serve o JavaScript?
  O JavaScript serve para tornar as aplicações Web mais dinâmicas, assim ao JavaScript, os navegadores passaram a ser capazes de responder a interações do usuário e alterar o layout do conteúdo na página, desse modo deixa a página mais interativa para o usuario, podendo atualizar elementos dinamicanmente e lidar melhor com os dados enviados e recebidos na página
 
@@ -27,7 +25,6 @@ Assim também facilitando conversõesn e reutilizações, e o navegador guarda e
 # Como declarar variáveis?
 Em JavaScript você declara variáveis ​​usando var, let ou const, sendo que hoje é mais recomendado usar principalmente let e const
 Use let quando o valor da variável pode mudar depois, e const quando o valor não deve ser reatribuído. O nome da variável deve começar com letra, sublinhado _ ou cifrão $, pode ter letras, números, _ ou $ depois, e não pode ser uma palavra reservada da linguagem, como var, let, if ou function
-exemplp04_variaveis_tipos_escopo
 
 # Diferença entre var, let e const
 Var: Declarar variáveis ​​com escopo de função, permitindo redeclaração e reatribuiçãoEla sofre hoisting(a declaração sobe para o topo do escopo, mas inicializada como undefined, o que pode causar problemas se usada antes da linha real) Exemplo: em um laço for, um var sai para fora do bloco, afetando código externo
@@ -40,7 +37,8 @@ Const: Também tem escopo de bloco, mas não da para mudar(não permite reatribu
 # O que é escopo de váriavel?
 O escopo de Variável define a região do código ond uma variável pode ser acessada e utilizada
 Naprogramação ele determina a visibilidade e o tempo de vida de uma variavel
-eviando conflitos e erros
+eviando conflitos e erros.
+Para exemplo de declaracao de variaveis, veja os arquivos na pasta 04_variaveis_tipos_escopo.
 
 # Diferença entre == e ===
 == (igualdade  solta/abstrata)
@@ -53,20 +51,8 @@ Só retorna true se os valores forem iguais e os tipos forem os mesmos
 !== diferente estrito: verifica se valor ou tipo são diferentes, sem conversão de tipo
 
 # Como declarar funções?
-Em JavaScript, para declara funções use function nome() { código } para a forma tradicional, const nome = function() { código } para expressões, ou const nome = () => código para arrow functions modernas. Chame com nome()
-Você declara funções de três formas simples:
+Em JavaScript, para declara funções use function nome() { código } para a forma tradicional, const nome = function() { código } para expressões, ou const nome = () => código para arrow functions modernas. Para exemplo de declaracao de funções, veja os arquivos na pasta 08_funç~.
 
-Função tradicional: function nome(parametros) { código; }
-Exemplo: function soma(a, b) { return a + b; }
-Pode ser usada antes da declaração (hoisting)
-
-Função em variável: const nome = function(parametros) { código; }
-Exemplo: const saudacao = function(nome) { return 'Olá, ' + nome; }
-
-Arrow function (moderna): const nome = (parametros) => { código; } ou const nome = (a, b) => a + b
-Exemplo: const multi = (x, y) => x * y
-
-Para usar: nome() ou nome(valor1, valor2)
 
 # Como fazer operações aritméticas e lógicas básicas?
 Operações Aritméticas
