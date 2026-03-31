@@ -1,6 +1,6 @@
 # O que é o Javascript?
-JavaScript e uma linguagem de programacao que te permite colocar itens complexos em paginas web.
-Com isso a págian web pode tanto exibir: informaçãoes estáticas, dinâmicas, mapas ou gráficos em 2D/3D animados, e até conteúdos que atiualizam a cada determidado tempo. Qunado você ver qualquer website com essa características pode apostar que o JavaScript provavelmente está envolvido. 
+JavaScript e uma linguagem de programação que te permite colocar itens complexos em paginas web.
+Com isso a página web pode tanto exibir: informaçãoes estáticas, dinâmicas, mapas ou gráficos em 2D/3D animados, e até conteúdos que atiualizam a cada determidado tempo. Qunado você ver qualquer website com essa características pode apostar que o JavaScript provavelmente está envolvido. 
 É a terceira camada do bolo das tecnologias padrões da web, sendo as outras o HTML e o CSS 
 
 
@@ -10,7 +10,7 @@ Com isso a págian web pode tanto exibir: informaçãoes estáticas, dinâmicas,
  O JavaScript serve para tornar as aplicações Web mais dinâmicas, assim ao JavaScript, os navegadores passaram a ser capazes de responder a interações do usuário e alterar o layout do conteúdo na página, desse modo deixa a página mais interativa para o usuario, podendo atualizar elementos dinamicanmente e lidar melhor com os dados enviados e recebidos na página
 
 # Como ele complementa HTML e CSS?
-O JavaScript complementa o HTML e o CSS como se ao todo fossem um corpo, o HTMl é o esqueleto que sustenta todod o sistema, já o CSS é a pele, cabelo e roupas, pois cria todo o visual do site como ele vai aparecer para o usuario, e por fim o JavaScripté o músculo, que dá movimnto, pois torna a página web mais dinâmica, permitindo criar funcões como animações, respostas a ações do usuário e atualização de conteúdos em tempo real
+O JavaScript complementa o HTML e o CSS como se ao todo fossem um corpo, o HTMl é o esqueleto que sustenta todo o sistema, já o CSS é a pele, cabelo e roupas, pois cria todo o visual do site como ele vai aparecer para o usuário, e por fim o JavaScript é o músculo, que dá movimnto, pois torna a página web mais dinâmica, permitindo criar funções como animações, respostas a ações do usuário e atualização de conteúdos em tempo real
 [![App Platform](https://i.imgur.com/Eps32Cl_d.webp?maxwidth=760&fidelity=grand)](https://cursos.alura.com.br/forum/topico-dica-sobre-oq-continuar-estudando-218376)
 
 # Onde JavaScript pode ser usado no HTML?
@@ -20,7 +20,7 @@ O JavaScript complementa o HTML e o CSS como se ao todo fossem um corpo, o HTMl 
 # Diferença entre script dentro do HTML e script em arquivo separado
 A principlal diferença está na organização e desempenho, o Script dentro do HTML são mais utiliza dos para para rápidos e pequenos códigos, pois carregam junto com a página, sem precisar baixar  arquivos extras, o que deixa tudo mais rápido.
 Contudo o Scripts em arquivo separado melhoram a organização, manutenção e permitem cache do navegador para projetos maiores, o HTML fica mais limpo, só com a estrutura da página, com o Script separado da para editar muito mais fácil e váris pessoas podem editar ao mesmo tempo sem gerar confusões.
-Assim também facilitando conversõesn e reutilizações, e o navegador guarda eles em cache para carregar mais rápido em projetos grandes 
+Assim também facilitando conversões e reutilizações, e o navegador guarda eles em cache para carregar mais rápido em projetos grandes 
 
 # Como declarar variáveis?
 Em JavaScript você declara variáveis ​​usando var, let ou const, sendo que hoje é mais recomendado usar principalmente let e const
@@ -51,46 +51,52 @@ Só retorna true se os valores forem iguais e os tipos forem os mesmos
 !== diferente estrito: verifica se valor ou tipo são diferentes, sem conversão de tipo
 
 # Como declarar funções?
-Em JavaScript, para declara funções use function nome() { código } para a forma tradicional, const nome = function() { código } para expressões, ou const nome = () => código para arrow functions modernas. Para exemplo de declaracao de funções, veja os arquivos na pasta 08_funç~.
+Em JavaScript, para declara funções use function nome() { código } para a forma tradicional, const nome = function() { código } para expressões, ou const nome = () => código para arrow functions modernas. Para exemplo de declaracao de funções, veja os arquivos na pasta 08_funções.
 
 
 # Como fazer operações aritméticas e lógicas básicas?
 Operações Aritméticas
 operadores para cálculos: + (soma), - (subtração), * (multiplicação), / (divisão), % (resto da divisão), ** (potência)
-Exemplo: 10 + 5 resulta em 15
-         10 % 3 dá 1
 
 Operações Lógicas
 Combine booleanos com && (E lógico), || (OU lógico) e ! (NÃO)
-Exemplo: true && false é false
-         !true é false.
+
 
 Útil para condições: if (idade >= 18 && autorizado) { ... }
 
+Para exemplo de operações aritiméticas, veja os arquivos na pasta 06_operadores_e_comparacoes.
+
 # Como usar estruturas condicionais?
-Em JavaScript, as estruturas condicionais fazem os códigos baseados em condições verdadeiras ou falsa, usando  if, else if e else
-Sintaxe básica: if (condição) { código se verdadeiro } else { código se falso }.
-
-Múltiplas condições: if (condição1) { ... } else if (condição2) { ... } else { ... }
-
- Para uma nota de 8, if (nota >= 9) { "A" } else if (nota >= 7) { "B" } else { "Reprovado" } mostra "B"
+As estruturas condicionais em JavaScript servem para fazer o programa tomar decisões, executando ações diferentes dependendo de uma condição.
+O if é usado quando queremos executar um código se a condição for verdadeira. O if...else permite escolher entre duas opções, e o else if é usado quando há várias condições possíveis.
+Já o switch é indicado quando temos várias opções fixas para comparar, deixando o código mais organizado
+Para exemplo de condicionais, veja os arquivos na pasta 06_condionais
 
  # Como usar estruturas de repetição?
- As estruturas de repetição em JavaScript servem para fazer com que um bloco de códigos execute varias vezes até que as condições sejam feitas, as principais  são for, while e do...while
- For: é usando quando se sabe quantas vezes aproximadamente repetir o bloco
- exemplo: for(le i = 0; i < 5; i++) {
-            console.log("Numero: " +i);
-            }
-    -let i = 0: inicio do condutor
-    -i < 5 : condição para continuar
-    -i++: após cara interação
-
-While: é usado quando não se sabe o número de vezes que ira se repetir, mas sabe a condição de parada
-exemplo: let i = 0;
-         while (i < 5) {
-            console.log("Número " + 1);
-            1++;
-            }
-A código que esta dentro so while so vai rodar se (i < 5) for true
-
+As estruturas de repetição em JavaScript servem para fazer com que um bloco de códigos execute varias vezes até que as condições sejam feitas, as principais são for, while e do...while For: é usando quando se sabe quantas vezes aproximadamente repetir o bloco.
+While: é usado quando não se sabe o número de vezes que ira se repetir, mas sabe a condição de parada.
 Do...while: é usado uma vez após a condição ser verificada
+
+Para exemplo de estruturas, veja os arquivos na pasta 07_repeticao
+
+# Como JavaScript pode interagir com elementos da página?
+JavaScript conversa com a página pelo DOM, que é a estrutura de tudo que você vê: ele acha elementos por nome ou classe, muda o texto, cor ou tamanho deles, fica ouvindo cliques ou teclas para reagir na hora, e também cria ou apaga pedaços da página 
+
+# Fontes
+https://aws.amazon.com/pt/what-is/javascript/#:~:text=O%20JavaScript%20surgiu%20como%20uma,layout%20do%20conte%C3%BAdo%20na%20p%C3%A1gina.
+https://www.alura.com.br/artigos/html-css-e-js-definicoes#:~:text=Para%20completar%20a%20grande%20tr%C3%ADade,com%20HTML%20de%20forma%20est%C3%A1tica.
+https://www.hostinger.com/br/tutoriais/como-adicionar-javascript-no-html
+https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Scripting/What_is_JavaScript
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Functions
+https://cursos.alura.com.br/forum/topico-dica-sobre-oq-continuar-estudando-218376
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/if...else
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/function
+http://pt.stackoverflow.com/questions/7/qual-a-diferen%C3%A7a-entre-os-operadores-e-em-javascript
+https://materialpublic.imd.ufrn.br/curso/disciplina/3/13/14/6
+https://linguagemc.com.br/funcoes-e-escopo-de-variaveis/
+https://www.freecodecamp.org/portuguese/news/var-let-e-const-qual-e-a-diferenca/
+https://www.devmedia.com.br/javascript-variaveis-e-constantes/41012
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Grammar_and_types
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Introduction
+https://www.alura.com.br/artigos/html-css-e-js-definicoes?srsltid=AfmBOooq9Z32IbxDqWZV2INZZhpvHak1RHTWNREVj0P4-cSTY6p_FdLG#html
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript
